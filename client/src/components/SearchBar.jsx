@@ -5,14 +5,14 @@ function SearchBar() {
     return (
    <div className="flex gap-4 mb-6">
   <div className="relative flex-1">
-    <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+    <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#88077]" />
 
     <input
       type="text"
       placeholder="Search recipes..."
       className=" w-full
                  border
-                border-[#BAB077]
+                border-[#8A8077]
                 rounded-xl
                 py-3
                 pl-10
@@ -28,6 +28,7 @@ function SearchBar() {
                     bg-[#5B4A3E]
                     text-white
                     hover:bg-[#D0917F]
+                    active:scale-95
                     transition-all
                     duration-300
                     font-medium">

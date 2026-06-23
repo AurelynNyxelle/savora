@@ -1,5 +1,6 @@
 import MainLayout from "../../layouts/MainLayout";
 import { FiArrowLeft } from "react-icons/fi";
+import { FiUploadCloud} from "react-icons/fi";
 function AddRecipe() {
   return (
     <MainLayout>
@@ -7,7 +8,7 @@ function AddRecipe() {
         <div className="flex items-center gap-3 mb-4">
             <FiArrowLeft
             className="text-2xl cursor-pointer" />
-        <h1 className="text-2xl font-bold"> 
+        <h1 className="text-2xl font-tai font-bold"> 
           Add New Recipe
         </h1>
         </div>
@@ -16,8 +17,15 @@ function AddRecipe() {
 
           <div className="space-y-4">
 
-            <div className="h-48 border-2 border-dashed border-[#8A8077] rounded-2xl flex items-center justify-center">
+            <div className="h-48 border-2 border-dashed border-[#8A8077] rounded-2xl flex flex-col items-center justify-center">
+              <FiUploadCloud 
+              className="text-5xl text-[#D0917F] mb-2"/>
+              <p className="font-source font-medium">
               Upload Image
+              </p>
+              <p className="text-sm text-gray-500">
+                PNG,JPG up to 5MB
+                </p>
             </div>
             <div className="space-y-2">
                 <label className="font-medium text-[#5B4A3E]">
@@ -25,8 +33,8 @@ function AddRecipe() {
                 </label>
             <input
               type="text"
-              placeholder="e.g Creamy Mushroom Pasta"
-              className="w-full border rounded-xl p-3"
+              placeholder="e.g Choco lava cake"
+              className="w-full border-2 border-[#8A8077] rounded-xl p-3"
             />
             </div>
             
@@ -34,7 +42,7 @@ function AddRecipe() {
                 <label className="font-medium text-[#5B4A3E]">
                     Category
                 </label>
-            <select className="w-full border rounded-xl p-3">
+            <select className="w-full border-2 border-[#8A8077] rounded-xl p-3">
                 <option value="">
                     Select Category
                 </option>
@@ -55,7 +63,7 @@ function AddRecipe() {
             <input
               type="text"
               placeholder="e.g 30 mins"
-              className="w-full border rounded-xl p-3"
+              className="w-full border-2 border-[#8A8077] rounded-xl p-3"
             />
           </div>
            
@@ -66,7 +74,7 @@ function AddRecipe() {
             <div className="flex items-center gap-3">
           <input
           placeholder="Add Ingredient"
-          className="flex-1 border rounded-xl p-3"
+          className="flex-1 border-2 border-[#8A8077] rounded-xl p-3"
         />
         <button
          className="
@@ -77,7 +85,8 @@ function AddRecipe() {
          text-white
          flex-item-center justify-center
          hover:bg-[#D0917F]
-         transition-all">
+         active:scale-95
+         transition-all duration-300">
             +
         </button>
         </div>
@@ -88,7 +97,7 @@ function AddRecipe() {
             <textarea
               placeholder="Write step by step procedure"
               rows="6"
-              className="w-full h-40 border-2 border-[#8A8077] border rounded-xl p-3"
+              className="w-full h-40 border-2 border-[#8A8077] rounded-xl p-3"
             />
             </div>
               <div className="space-y-2">
@@ -98,7 +107,7 @@ function AddRecipe() {
             <input
               type="text"
               placeholder="e.g Fresh coriander, Cream"
-              className="w-full border rounded-xl p-3"
+              className="w-full border-2 border-[#8A8077] rounded-xl p-3"
             />
             </div>
           </div>

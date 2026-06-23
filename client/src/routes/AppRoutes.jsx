@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Recipes from "../pages/Recipes/Recipes";
 import RecipeDetails from "../pages/RecipeDetails/RecipeDetails";
@@ -14,7 +13,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Dashboard />} />
       <Route path="/recipes" element={<Recipes />} />
-      <Route path="/recipe/:id" element={<RecipeDetails />} />
+      <Route path="/recipe-details" element={<RecipeDetails />} />
       <Route path="/add-recipe" element={<AddRecipe />} />
       <Route path="/favorites" element={<Favorites />} />
       <Route path="/collections" element={<Collections />} />

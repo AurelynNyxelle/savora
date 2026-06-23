@@ -6,7 +6,7 @@ function RecipeCard() {
            rounded-2xl
            bg-[#E8DED4]
            border
-           border-[#BAB077]
+           border-[#8A8077]
            hover:shadow-xl
            hover:-translate-y-1
            transition-all
@@ -14,7 +14,7 @@ function RecipeCard() {
            cursor-pointer">
             <div className="h-40 rounded-xl bg-gray-300 mb-4">
                 </div>
-                <h3 className="font-semibold text-lg">
+                <h3 className="font-tai font-semibold text-xl">
                     Brownie
                 </h3>
                 <p className="text-sm">
