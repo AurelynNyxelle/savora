@@ -1,13 +1,16 @@
 import MainLayout from "../../layouts/MainLayout";
 import { FiArrowLeft } from "react-icons/fi";
 import { FiUploadCloud} from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 function AddRecipe() {
+  const navigate = useNavigate();
   return (
     <MainLayout>
       <div className="bg-[#E8DED4] border-2 border-[#8A8077] min-h-[80vh] rounded-3xl pt-8 px-8 pb-4 max-w-6xl mx-auto space-y-5">
         <div className="flex items-center gap-3 mb-4">
             <FiArrowLeft
-            className="text-2xl cursor-pointer" />
+            onClick={() => navigate(-1)}
+            className="text-2xl cursor-pointer hover:scale-110 active:scale-95 transition-all" />
         <h1 className="text-2xl font-tai font-bold"> 
           Add New Recipe
         </h1>
@@ -28,7 +31,7 @@ function AddRecipe() {
                 </p>
             </div>
             <div className="space-y-2">
-                <label className="font-medium text-[#5B4A3E]">
+                <label className="font-source font-medium text-[#5B4A3E]">
                     Recipe Title
                 </label>
             <input
@@ -39,7 +42,7 @@ function AddRecipe() {
             </div>
             
             <div className="space-y-2">
-                <label className="font-medium text-[#5B4A3E]">
+                <label className="font-source font-medium text-[#5B4A3E]">
                     Category
                 </label>
             <select className="w-full border-2 border-[#8A8077] rounded-xl p-3">
@@ -56,7 +59,7 @@ function AddRecipe() {
             </div>
 
             <div className="space-y-2">
-                <label className="font-medium text-[#5B4A3E]">
+                <label className="font-source font-medium text-[#5B4A3E]">
                     Cooking Time
                 </label>
                 </div>
@@ -68,7 +71,7 @@ function AddRecipe() {
           </div>
            
         <div className="space-y-2">
-          <label className="font-medium text-[#5B4A3E]">
+          <label className="font-source font-medium text-[#5B4A3E]">
                 Ingredients 
             </label>
             <div className="flex items-center gap-3">
@@ -91,7 +94,7 @@ function AddRecipe() {
         </button>
         </div>
              <div className="space-y-2">
-                <label className="font-medium text-[#5B4A3E]">
+                <label className="font-sourcee font-medium text-[#5B4A3E]">
                     Procedure
                 </label>
             <textarea
@@ -101,7 +104,7 @@ function AddRecipe() {
             />
             </div>
               <div className="space-y-2">
-                <label className="font-medium text-[#5B4A3E]">
+                <label className="font-source font-medium text-[#5B4A3E]">
                     Garnishing
                 </label>
             <input

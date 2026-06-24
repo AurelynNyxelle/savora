@@ -34,6 +34,10 @@ function RecipeDetails() {
             z-10
             bg-white/90
             p-3
+            text-xl
+             hover:scale-110 
+             active:scale-95 
+             transition-all
             rounded-full"
           >
             <FiArrowLeft />
@@ -47,6 +51,9 @@ function RecipeDetails() {
               rounded-full
               hover:bg-[#D0917F]
               hover:text-white
+              text-xl 
+              hover:scale-110 
+              active:scale-95 
               transition-all"
             >
               <FiEdit2 />
@@ -58,6 +65,9 @@ function RecipeDetails() {
               p-3
               rounded-full
               hover:bg-[#D0917F]
+              text-xl 
+              hover:scale-110 
+              active:scale-95 
               hover:text-white
               transition-all"
             >

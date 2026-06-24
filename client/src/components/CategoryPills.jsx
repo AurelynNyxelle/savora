@@ -8,6 +8,8 @@ function CategoryPills() {
         "Quick Meals",
         "Snacks",
         "Healthy",
+        "Drinks",
+        "International",
     ];
     return (
         <div className="flex flex-wrap gap-4">
@@ -15,7 +17,7 @@ function CategoryPills() {
                 <button 
                 key={category}
                 className={ category === "All"
-            ? "px-5 py-2 rounded-xl bg-[#5B4A3E] text-white border border-[#5B4A3E]"
+            ? "px-5 py-2 rounded-xl bg-[#5B4A3E] text-white border border-[#5B4A3E] hover:bg-[#D0917F] hover:text-white transition-all duration-300"
     : "px-5 py-2 rounded-xl bg-[#E8DED4] border border-[#8A8077] text-[#5B4A3E] hover:bg-[#D0917F] hover:text-white transition-all duration-300"}
     >
         {category}
