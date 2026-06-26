@@ -1,4 +1,8 @@
-function RecipeCard() {
+function RecipeCard ({
+    title = "Brownie",
+    time = "45 Mins",
+    category = "Dessert",
+}) {
     return(
         <div className="
            w-full
@@ -11,14 +15,15 @@ function RecipeCard() {
            hover:-translate-y-1
            transition-all
            duration-300
+           overflow-hidden
            cursor-pointer">
-            <div className="h-40 rounded-xl bg-gray-300 mb-4">
+            <div className="h-44 rounded-xl bg-gray-300 mb-4">
                 </div>
                 <h3 className="font-tai font-semibold text-xl">
-                    Brownie
+                   {title}
                 </h3>
                 <p className="text-sm">
-                    45 Mins . Dessert
+                    {time} • {category}
                 </p>
         </div>
     );

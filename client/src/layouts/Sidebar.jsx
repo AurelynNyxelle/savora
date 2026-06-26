@@ -9,6 +9,7 @@ import {
     FiLogOut,
 } from "react-icons/fi";
 import {MdRestaurant} from "react-icons/md";
+import savora from "../assets/savora.png"
 function Sidebar() {
     return (
         <div className="w-64
@@ -19,14 +20,11 @@ function Sidebar() {
          p-6
          flex
          flex-col">
-            <h1 className="text-4xl 
-            font-cinzel
-            font-bold
-            text-[#5B4A3E]
-             mb-10
-             text-left">
-                Savora
-            </h1>
+            <div className="mb-12 flex-items-center">
+           <img src={savora}
+           alt="savora"
+           className="w-48 h-auto object-contain" />
+           </div>
             <ul className="space-y-1">
                 <li className="font-source flex items-center gap-3 px-4 py-3 rounded-xl
                  bg-[#F6F2EB] text-[#D0917F] font-semibold hover:bg-[#D0917A] hover:text-white transition-all duration-300 cursor-pointer">
@@ -56,7 +54,7 @@ function Sidebar() {
                  text-[#5B4A3E] hover:bg-[#D0917F] hover:text-white cursor-pointer transition-all duration-300">
                 <FiLogOut className="text-lg" /> LogOut </li>
             </ul>
-            <div className="mt-auto">
+            <div className="mt-auto pt-8">
                 <div className="bg-[#E8DED4] rounded-2xl p-4 border
                 border-[#8A8077]">
                     <div className="h-24 bg-gray-200 rounded-xl mb-3"/>

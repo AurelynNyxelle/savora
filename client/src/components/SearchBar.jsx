@@ -5,7 +5,7 @@ function SearchBar() {
     return (
    <div className="flex gap-4 mb-6">
   <div className="relative flex-1">
-    <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#88077]" />
+    <FiSearch className="absolute left-3 top-1/2 -translate-y-1/2 text-[#8A8077]" />
 
     <input
       type="text"
