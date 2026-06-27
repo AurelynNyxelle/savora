@@ -9,7 +9,9 @@ import GroceryList from "../pages/GroceryList/GroceryList"
 import CookingStats from "../pages/CookingStats/CookingStats"
 import AIChef from "../pages/AIChef/AIChef";
 import Profile from "../pages/Profile/Profile";
-
+import Signup from "../pages/Signup/Signup";
+import Login from "../pages/Login/Login";
+import ForgotPassword from "../pages/ForgotPassword/Forgotpassword";
 function AppRoutes() {
   return (
     <Routes>
@@ -23,6 +25,9 @@ function AppRoutes() {
       <Route path="/cooking-stats" element={<CookingStats />} />
       <Route path="/ai-chef" element={<AIChef />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
     </Routes>
   );
 }
